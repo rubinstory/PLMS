@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html  dir="ltr" lang="ko" xml:lang="ko">
+<head>
+    <title>PLMS</title>
+    <link rel="shortcut icon" href="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/theme/1538974486/favicon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, PLMS" />
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"http:\/\/plms.pusan.ac.kr","sesskey":"wDzS3LqF5a","loadingicon":"http:\/\/plms.pusan.ac.kr\/theme\/image.php\/coursemosv2\/core\/1538974486\/i\/loading_small","themerev":"1538974486","slasharguments":1,"theme":"coursemosv2","jsrev":"1538974486","admin":"admin","svgicons":true};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''};if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else me.path=component+'/'+component+'.'+me.type};
+YUI_config = {"debug":false,"base":"http:\/\/plms.pusan.ac.kr\/lib\/yuilib\/3.17.2\/","comboBase":"http:\/\/plms.pusan.ac.kr\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"http:\/\/plms.pusan.ac.kr\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"http:\/\/plms.pusan.ac.kr\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"http:\/\/plms.pusan.ac.kr\/theme\/yui_combo.php?m\/1538974486\/","combine":true,"comboBase":"http:\/\/plms.pusan.ac.kr\/theme\/yui_combo.php?","ext":false,"root":"m\/1538974486\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-formchangechecker":{"requires":["base","event-focus"]},"moodle-core-formautosubmit":{"requires":["base","event-key"]},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core_availability-form":{"requires":["base","node","event","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-calendar-info":{"requires":["base","node","event-mouseenter","event-key","overlay","moodle-calendar-info-skin"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-toolboxes":{"requires":["node","base","event-key","node","io","moodle-course-coursebase","moodle-course-util"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-passwordunmask":{"requires":["node","base"]},"moodle-core_message-messenger":{"requires":["escape","handlebars","io-base","moodle-core-notification-ajaxexception","moodle-core-notification-alert","moodle-core-notification-dialogue","moodle-core-notification-exception"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_quiz-util":{"requires":["node"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-quizquestionbank":{"requires":["base","event","node","io","io-form","yui-later","moodle-question-qbankmanager","moodle-core-notification-dialogue"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-randomquestion":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-block_navigation-navigation":{"requires":["base","io-base","node","event-synthetic","event-delegate","json-parse"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_coursemosvimeo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_html-button":{"requires":["moodle-editor_atto-plugin","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"http:\/\/plms.pusan.ac.kr\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"http:\/\/plms.pusan.ac.kr\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1538974486\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"http:\/\/plms.pusan.ac.kr\/lib\/javascript.php\/1538974486\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker"]},"mathjax":{"name":"mathjax","fullpath":"http:\/\/cdn.mathjax.org\/mathjax\/2.5-latest\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+<link rel="stylesheet" type="text/css" href="http://plms.pusan.ac.kr/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script type="text/javascript" src="http://plms.pusan.ac.kr/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js&amp;rollup/1538974486/mcore-min.js"></script><script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/core/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/core/ui-1.11.4/jquery-ui.min.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/theme_coursemosv2/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/theme_coursemosv2/jquery.cookie.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/theme_coursemosv2/jquery.validate.min.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/theme_coursemosv2/jquery.validate.methods.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/theme_coursemosv2/jquery.tableHeadFixer.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/theme_coursemosv2/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/theme_coursemosv2/jquery.sortable.min.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/theme_coursemosv2/moment.min.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/theme_coursemosv2/fullcalendar.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/theme_coursemosv2/gcal.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/theme_coursemosv2/jquery.filedownload.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/theme_coursemosv2/timer.jquery.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/theme_coursemosv2/jquery.ambiance.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/theme_coursemosv2/jquery.validate.ko.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/theme_coursemosv2/bootstrap-datepicker.kr.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/theme_coursemosv2/fullcalendar/ko.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/theme_coursemosv2/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/theme_coursemosv2/jquery.headroom.min.js"></script>
+<script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="http://plms.pusan.ac.kr/theme/styles.php/coursemosv2/1538974486/all" />
+<script type="text/javascript" src="http://plms.pusan.ac.kr/lib/javascript.php/1538974486/lib/javascript-static.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/lib/javascript.php/1538974486/template_/index.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/javascript.php/coursemosv2/1538974486/head"></script>
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="부산대학교 온라인 학습관리시스템(PLMS)" />
+<meta property="og:description" content="PNU Learning Management System" />
+<meta property="og:image" content="null" />
+<meta property="og:url" content="http://plms.pusan.ac.kr" />
+<script type="text/javascript" src="https://s3.ap-northeast-2.amazonaws.com/code.coursemos.co.kr/flexiblepage.js?v=0.09"></script>    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi, minimal-ui" />
+	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW" />
+    <script type="text/javascript">
+		theme_coursemosv2.lang = 'ko';
+    </script>
+</head>
+
+<body  id="page-site-index" class="format-site course path-site safari dir-ltr lang-ko yui-skin-sam yui3-skin-sam plms-pusan-ac-kr pagelayout-frontpage course-1 context-2 has-region-side-pre empty-region-side-pre has-region-side-post used-region-side-post side-post-only layout-option-nonavbar">
+	<div class="skiplinks"><a class="skip" href="#maincontent">주 내용으로 가기</a></div>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+	<div id="page" class="">
+		<div id="page-header">
+			<nav class="navbar navbar-default navbar-fixed-top headroom">
+	<div class="container-fluid">
+		<div class="navbar-brand">
+			<a href="http://plms.pusan.ac.kr" class="logo"><span class="sr-only">CyberCampus</span></a>
+		</div>
+		
+		<div class="usermenu">
+		<ul class="nav nav-pills" role="tablist"><li class="user_department hidden-xs">이준영</li><li class="user-info-menu"><a class="user-info-popover" tabindex="0" role="button" data-toggle="popover" data-placement="bottom"><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/core/1538974486/u/f2" alt="정우영 사진" class="userpicture" /></a><div class="user-info-box popover-box"><div class="dropdown dropdown-lang"><a id="user-info-lang" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/theme_coursemosv2/1538974486/flag/ko" alt="" />&nbsp;&nbsp;한국어 (ko) <span class="caret"></span> </a><ul class="dropdown-menu" aria-labelledby="user-info-lang"><li><a href="http://plms.pusan.ac.kr/index.php?lang=en" title="English (en)" class="a-lang" data-lang="en"><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/theme_coursemosv2/1538974486/flag/en" alt="en" class="lang_flag" /> English (en)</a></li><li><a href="http://plms.pusan.ac.kr/index.php?lang=ko" title="한국어 (ko)" class="a-lang" data-lang="ko"><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/theme_coursemosv2/1538974486/flag/ko" alt="ko" class="lang_flag" /> 한국어 (ko)</a></li><li><a href="http://plms.pusan.ac.kr/index.php?lang=zh_cn" title="简体中文 (zh_cn)" class="a-lang" data-lang="zh_cn"><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/theme_coursemosv2/1538974486/flag/zh_cn" alt="zh_cn" class="lang_flag" /> 简体中文 (zh_cn)</a></li></ul></div><div class="user-info-picture"><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/core/1538974486/u/f1" alt="정우영 사진" class="userpicture" /><h4>정우영</h4><p class="department">전기컴퓨터공학부</p></div><ul class="user-info-submenu clearfix"><li class="items"><a href="http://plms.pusan.ac.kr/user/edit.php?id=77459">개인정보 수정</a></li><li class="items"><a href="http://plms.pusan.ac.kr/login/logout.php?sesskey=wDzS3LqF5a">로그아웃</a></li></ul><ul class="user-info-shortcut"></ul></div></li><li class="user-courses"><a class="user-courses-popover icon-a" tabindex="0" role="button" data-toggle="popover" data-placement="bottom"><div class="icon icon-my"></div></a><div class="user-courses-box popover-box"><div class="popover-header">진행중인 강좌 (0)</div><ul class="my-course-lists"><li class="nocourses">Loading...</li></ul><div class="popover-footer"><a href="http://plms.pusan.ac.kr">MY COURSES</a></div></div></li><li class="user-notification"><a class="icon-a user-noti-popover" tabindex="0" role="button" data-toggle="popover" data-placement="bottom"><div class="icon icon-noti"></div><span class="badge">1</span></a><div class="user-noti-box popover-box"><div class="popover-header"><span>전체 알림</span> <img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/theme_coursemosv2/1538974486/layout/popover-icon" alt="" class="gear" /></div><div class="user-noti-lists"><div class="nomessage">Loading...</div></div><div class="popover-footer"><a href="http://plms.pusan.ac.kr/local/ubnotification/">모두 보기</a></div></div></li><li class="user-message"><a class="icon-a user-message-popover" tabindex="0" role="button" data-toggle="popover" data-placement="bottom"><div class="icon icon-msg"></div></a><div class="user-message-box popover-box"><div class="popover-header">대화 <img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/theme_coursemosv2/1538974486/layout/popover-icon" alt="" class="gear" /></div><div class="user-message-lists"><div class="nomessage">Loading...</div></div><div class="popover-footer"><a href="#" class="btn-allread-message">모두 읽음으로 표시</a><span class="popover-bar">&nbsp;</span><a href="http://plms.pusan.ac.kr/local/ubmessage/">전체보기</a></div></div></li><li class="user-product"><a class="user-menu-product icon-a" tabindex="0" role="button" data-toggle="popover"><div class="icon icon-menu"></div></a><div class="hide menu-product"><div class="menu-product-itl"><h5>교수학습지원 안내 <a href="http://ctl.pusan.ac.kr/"><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/theme_coursemosv2/1538974486/layout/itl_home" alt="" /></a></h5><ul><li><a href="http://ctl.pusan.ac.kr/" target="_blank">교수학습지원센터</a></li><li><a href="http://web.pptworld.co.kr/pusan" target="_blank">무료PPT템플릿</a></li><li><a href="http://www.kmooc.kr/school/PNUk" target="_blank">MOOC</a></li><li><a href="http://www.kocw.net/" target="_blank">KOCW</a></li><li><a href="http://oer.pusan.ac.kr/auth/checkAuth" target="_blank">효원지식나눔터</a></li></ul></div><div class="menu-product-family"><h5>학교 서비스</h5><div class="container-fluid"><div class="row"><div class="col-xs-7"><a href="http://icert.pusan.ac.kr/" target="_blank">인터넷증명발급</a></div><div class="col-xs-5"><a href="http://lib.pusan.ac.kr/" target="_blank">도서관</a></div><div class="col-xs-7"><a href="http://hrd.pusan.ac.kr/">취업전략과</a></div><div class="col-xs-5"><a href="https://e-onestop.pusan.ac.kr/">학생지원시스템</a></div></div></div></div></div></li><li class="active user-login user-logout hidden-xs"><a href="http://plms.pusan.ac.kr/login/logout.php?sesskey=wDzS3LqF5a" class="btn btn-person">로그아웃</a></li></ul>		</div>
+		
+		<div class="coursename"><h1>&nbsp;</h1></div>	</div>
+</nav>		</div>
+		
+		<div id="page-lnb">
+			<ul class="left-menus">
+	<li class="active active-fix"><a href="http://plms.pusan.ac.kr" class="left-menu-link left-menu-link-mypage" title="My Page" data-toggle="tooltip" data-placement="right" ><h5 class="">My Page</h5></a><ul><li class="active"><a href="http://plms.pusan.ac.kr" title="active">Dashboard</a></li><li class=""><a href="http://plms.pusan.ac.kr/mod/ubboard/my.php" title="">진행강좌 공지</a></li><li class=""><a href="http://plms.pusan.ac.kr/user/edit.php?id=77459" title="">개인정보 수정</a></li></ul></li><li class=""><a href="http://plms.pusan.ac.kr" class="left-menu-link left-menu-link-mycourses" title="교과과정" data-toggle="tooltip" data-placement="right" ><h5 class="">교과과정</h5></a><ul><li class=""><a href="http://plms.pusan.ac.kr/local/ubion/user/" title="">나의 강좌</a></li><li class=""><a href="http://plms.pusan.ac.kr/local/ubassistant/" title="">조교/청강생 신청</a></li></ul></li><li class=""><a href="http://plms.pusan.ac.kr/local/ubassistant/irregular.php" class="left-menu-link left-menu-link-irregular" title="비정규강좌" data-toggle="tooltip" data-placement="right" ><h5 class="nosubmenu">비정규강좌</h5></a></li><li class=""><a href="http://oer.pusan.ac.kr/auth/checkAuth" class="left-menu-link left-menu-link-oer" title="OER 지식나눔시스템" data-toggle="tooltip" data-placement="right"  target="_blank"><h5 class="nosubmenu">OER 지식나눔시스템</h5></a></li><li class=""><a href="http://plms.pusan.ac.kr/local/ubmanual/" class="left-menu-link left-menu-link-manual" title="매뉴얼" data-toggle="tooltip" data-placement="right" ><h5 class="nosubmenu">매뉴얼</h5></a></li><li class=""><a href="http://plms.pusan.ac.kr/mod/ubboard/view.php?id=1" class="left-menu-link left-menu-link-guide" title="이용안내" data-toggle="tooltip" data-placement="right" ><h5 class="">이용안내</h5></a><ul><li class=""><a href="http://plms.pusan.ac.kr/mod/ubboard/view.php?id=1" title="">공지사항</a></li><li class=""><a href="http://plms.pusan.ac.kr/mod/ubboard/view.php?id=2" title="">Q&A</a></li><li class=""><a href="http://plms.pusan.ac.kr/mod/ubboard/view.php?id=3" title="">FAQ</a></li><li class=""><a href="http://plms.pusan.ac.kr/mod/ubboard/view.php?id=4" title="">자료실</a></li></ul></li></ul>
+<div class="text-center copykiller">
+	<a href="http://plms.pusan.ac.kr/copykiller/login.php" target="_blank">
+		<img src="http://plms.pusan.ac.kr/copykiller/image/copykiller.png?v=1" alt="copykiller" title="copykiller" class="copykiller-lg" />
+		<img src="http://plms.pusan.ac.kr/copykiller/image/copykiller_sm.png" alt="copykiller" title="copykiller" class="copykiller-sm" />
+	</a>
+</div>
+<div class="itl_info">
+	<h5>PLMS 사용문의</h5>
+	<div class="itl_desc">
+		<p class="tell">051-510-3843</p>
+		<p class="email">plms@pusan.ac.kr</p>
+		<p class="name">교수학습지원센터</p>
+	</div>
+</div>		</div>
+		
+		<div id="page-mask">
+			<div id="page-container">
+								<div id="page-blocks">
+										<div class="block block-news block-coursemos " data-name="news">
+						<div class="header">
+							<div class="title">
+								<div class="block_action">
+									<img class="block-hider-hide" alt="블록 숨기기" src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/core/1538974486/t/switch_minus" title="블록 숨기기" />
+									<img class="block-hider-show" alt="블록 보이기" src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/core/1538974486/t/switch_plus" title="블록 보이기" />
+								</div>
+								<h2>중요공지</h2>
+							</div>
+						</div>
+						<div class="content">
+							<ul class="clearfix timeline"><li><a href="http://plms.pusan.ac.kr/mod/ubboard/article.php?id=1&bwid=597278"><div class="image"><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/theme_coursemosv2/1538974486/layout/block-notices" alt="" /></div><div class="title"><h5 title="동영상 강의 수강인정 관련 안내(문의 전 필독)">동영상 강의 수강인정 관련 안내(문의 전 필독)</h5><p class="date" title="2017-12-08 16:36">2017년 12월 08일</p></div></a></li><li><a href="http://plms.pusan.ac.kr/mod/ubboard/article.php?id=1&bwid=621421"><div class="image"><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/theme_coursemosv2/1538974486/layout/block-notices" alt="" /></div><div class="title"><h5 title="2018학년도 1학기 사이버 강의실 개설 완료 안내">2018학년도 1학기 사이버 강의실 개설 완료 안내</h5><p class="date" title="2018-02-21 09:51">2018년 2월 21일</p></div></a></li><li class="more_button"><div class="title"><a href="http://plms.pusan.ac.kr/mod/ubboard/view.php?id=1" class="btn btn-xs btn-default btn-more">더보기</a></div></li></ul>	
+						</div>
+					</div>
+										<div class="block block-upcomming block-coursemos " data-name="upcomming">
+						<div class="header">
+							<div class="title">
+								<div class="block_action">
+									<img class="block-hider-hide" alt="블록 숨기기" src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/core/1538974486/t/switch_minus" title="블록 숨기기" />
+									<img class="block-hider-show" alt="블록 보이기" src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/core/1538974486/t/switch_plus" title="블록 보이기" />
+								</div>
+								<h2>
+									예정된 할일 <span>(10월30일 ~ 11월13일)</span>								</h2>
+							</div>
+						</div>
+						<div class="content">
+							<ul class="clearfix timeline">
+							<li><a href="http://plms.pusan.ac.kr/mod/quiz/view.php?id=218632"><div class="image"><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/theme_coursemosv2/1538974486/timeline/quiz" alt="응답하지 않음" title="퀴즈" class="icon" /></div><div class="title"><h5 title="[Midterm-A:90]">[Midterm-A:90]</h5><p class="date upcomming_date" title="2018-10-30 18:00 ~ 2018-10-30 19:30">2018년 10월 30일 ~ 2018년 10월 30일</p></div></a></li><li><a href="http://plms.pusan.ac.kr/mod/quiz/view.php?id=218633"><div class="image"><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/theme_coursemosv2/1538974486/timeline/quiz" alt="응답하지 않음" title="퀴즈" class="icon" /></div><div class="title"><h5 title="[Midterm-B:60]">[Midterm-B:60]</h5><p class="date upcomming_date" title="2018-10-30 18:00 ~ 2018-10-30 19:30">2018년 10월 30일 ~ 2018년 10월 30일</p></div></a></li><li><a href="http://plms.pusan.ac.kr/mod/quiz/view.php?id=212087"><div class="image"><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/theme_coursemosv2/1538974486/timeline/quiz" alt="응답하지 않음" title="퀴즈" class="icon" /></div><div class="title"><h5 title="[7A:6]">[7A:6]</h5><p class="date upcomming_date" title="2018-10-31 13:00 ~ 2018-11-01 13:00">2018년 10월 31일 ~ 2018년 11월 01일</p></div></a></li><li><a href="http://plms.pusan.ac.kr/mod/quiz/view.php?id=212091"><div class="image"><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/theme_coursemosv2/1538974486/timeline/quiz" alt="응답하지 않음" title="퀴즈" class="icon" /></div><div class="title"><h5 title="[7B:6]">[7B:6]</h5><p class="date upcomming_date" title="2018-10-31 13:00 ~ 2018-11-03 22:00">2018년 10월 31일 ~ 2018년 11월 03일</p></div></a></li><li><a href="http://plms.pusan.ac.kr/mod/quiz/view.php?id=217107"><div class="image"><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/theme_coursemosv2/1538974486/timeline/quiz" alt="응답하지 않음" title="퀴즈" class="icon" /></div><div class="title"><h5 title="[8-1A:6]">[8-1A:6]</h5><p class="date upcomming_date" title="2018-11-05 13:00 ~ 2018-11-06 13:00">2018년 11월 05일 ~ 2018년 11월 06일</p></div></a></li><li class="more_button"><div class="title"><a href="http://plms.pusan.ac.kr/calendar/view.php?view=month&cal_m=10" class="btn btn-xs btn-default btn-more">10 일정 더 보기</a></div></li>							</ul>
+						</div>
+					</div>
+										<div class="block block-notification block-coursemos " data-name="notification">
+						<div class="header">
+							<div class="title">
+								<div class="block_action">
+									<img class="block-hider-hide" alt="블록 숨기기" src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/core/1538974486/t/switch_minus" title="블록 숨기기" />
+									<img class="block-hider-show" alt="블록 보이기" src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/core/1538974486/t/switch_plus" title="블록 보이기" />
+								</div>
+								<h2>
+									전체 알림<span class="badge">1</span>								</h2>
+							</div>
+						</div>
+						<div class="content ubnotification">
+							
+							<div class="media last-media"><a href="http://plms.pusan.ac.kr/mod/ubboard/article.php?id=195404&bwid=781375"><div class="media-left"><img class="media-object" src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/theme_coursemosv2/1538974486/timeline/ubboard_notice" alt="" /></div><div class="media-body"><h5 class="media-heading"><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/theme_coursemosv2/1538974486/layout/notice_new" alt="new" /> 기초컴퓨터프로그래밍 (003)</h5><p>새 공지사항이 등록되었습니다.</p></div></a></div>							
+							
+							<div class="more_button">
+								<a href=http://plms.pusan.ac.kr/local/ubnotification/ class="btn btn-xs btn-default">모두 보기</a>
+							</div>
+						</div>
+					</div>
+					<aside id="block-region-side-pre" class="block-region" data-blockregion="side-pre" data-droptarget="1"></aside>			        <aside id="block-region-side-post" class="block-region" data-blockregion="side-post" data-droptarget="1"><a href="#sb-2" class="skip-block">달력 생략</a><div id="inst3" class="block_calendar_month  block" role="complementary" data-block="calendar_month" data-instanceid="3" aria-labelledby="instance-3-header"><div class="header"><div class="title"><div class="block_action"></div><h2 id="instance-3-header">달력</h2></div></div><div class="content"><table class="minicalendar calendartable" summary="2018년 10월 달력"><caption><div class="calendar-controls"><a class="arrow_link previous" href="http://plms.pusan.ac.kr/?time=1535727600" title="지난 달"><span class="arrow ">&#x25C0;&#xFE0E;</span><span class="accesshide " >&nbsp;<span class="arrow_text">지난 달</span></span></a><span class="hide"> | </span><span class="current"><a title="이번 달" href="http://plms.pusan.ac.kr/calendar/view.php?view=month&amp;time=1540883609&amp;course=1">2018년 10월</a></span><span class="hide"> | </span><a class="arrow_link next" href="http://plms.pusan.ac.kr/?time=1540998000" title="다음 달"><span class="accesshide " ><span class="arrow_text">다음 달</span>&nbsp;</span><span class="arrow ">&#x25B6;&#xFE0E;</span></a><span class="clearer"><!-- --></span>
+</div></caption><tr class="weekdays"><th scope="col"><abbr title="일요일">일</abbr></th>
+<th scope="col"><abbr title="월요일">월</abbr></th>
+<th scope="col"><abbr title="화요일">화</abbr></th>
+<th scope="col"><abbr title="수요일">수</abbr></th>
+<th scope="col"><abbr title="목요일">목</abbr></th>
+<th scope="col"><abbr title="금요일">금</abbr></th>
+<th scope="col"><abbr title="토요일">토</abbr></th>
+</tr><tr><td class="dayblank">&nbsp;</td>
+<td class="day duration  duration_course">1</td><td class="day duration  duration_course">2</td><td class="day duration  duration_course">3</td><td class="day duration  duration_course">4</td><td class="day duration  duration_course">5</td><td class="weekend day duration  duration_course">6</td></tr><tr><td class="weekend day duration  duration_course">7</td><td data-core_calendar-title="2018년 10월 08일(월요일) 일정" data-core_calendar-popupcontent="&lt;div&gt;&lt;img class=&quot;smallicon&quot; alt=&quot;quiz&quot; title=&quot;quiz&quot; src=&quot;http://plms.pusan.ac.kr/theme/image.php/coursemosv2/quiz/1538974486/icon&quot; /&gt;&lt;a href=&quot;http://plms.pusan.ac.kr/calendar/view.php?view=day&amp;amp;time=1538924400#event_45298&quot;&gt;[4-2A:5]&lt;/a&gt;&lt;/div&gt;&lt;div&gt;&lt;img class=&quot;smallicon&quot; alt=&quot;quiz&quot; title=&quot;quiz&quot; src=&quot;http://plms.pusan.ac.kr/theme/image.php/coursemosv2/quiz/1538974486/icon&quot; /&gt;&lt;a href=&quot;http://plms.pusan.ac.kr/calendar/view.php?view=day&amp;amp;time=1538924400#event_45299&quot;&gt;[4-2B:8]&lt;/a&gt;&lt;/div&gt;" class="day hasevent calendar_event_course duration  duration_course calendar_event_course"><a href="http://plms.pusan.ac.kr/calendar/view.php?view=day&amp;time=1538924400#event_45299">8</a></td><td class="day duration  duration_course">9</td><td data-core_calendar-title="2018년 10월 10일(수요일) 일정" data-core_calendar-popupcontent="&lt;div&gt;&lt;img class=&quot;smallicon&quot; alt=&quot;quiz&quot; title=&quot;quiz&quot; src=&quot;http://plms.pusan.ac.kr/theme/image.php/coursemosv2/quiz/1538974486/icon&quot; /&gt;&lt;a href=&quot;http://plms.pusan.ac.kr/calendar/view.php?view=day&amp;amp;time=1539097200#event_45427&quot;&gt;[5-1A:8]&lt;/a&gt;&lt;/div&gt;&lt;div&gt;&lt;img class=&quot;smallicon&quot; alt=&quot;quiz&quot; title=&quot;quiz&quot; src=&quot;http://plms.pusan.ac.kr/theme/image.php/coursemosv2/quiz/1538974486/icon&quot; /&gt;&lt;a href=&quot;http://plms.pusan.ac.kr/calendar/view.php?view=day&amp;amp;time=1539097200#event_45430&quot;&gt;[5-1B:4]&lt;/a&gt;&lt;/div&gt;&lt;div&gt;&lt;img class=&quot;smallicon&quot; alt=&quot;quiz&quot; title=&quot;quiz&quot; src=&quot;http://plms.pusan.ac.kr/theme/image.php/coursemosv2/quiz/1538974486/icon&quot; /&gt;&lt;a href=&quot;http://plms.pusan.ac.kr/calendar/view.php?view=day&amp;amp;time=1539097200#event_46441&quot;&gt;[LAB4:25] (종료 일시)&lt;/a&gt;&lt;/div&gt;" class="day hasevent calendar_event_course duration  duration_course calendar_event_course"><a href="http://plms.pusan.ac.kr/calendar/view.php?view=day&amp;time=1539097200#event_46441">10</a></td><td data-core_calendar-title="2018년 10월 11일(목요일) 일정" data-core_calendar-popupcontent="&lt;div&gt;&lt;img class=&quot;smallicon&quot; alt=&quot;assign&quot; title=&quot;assign&quot; src=&quot;http://plms.pusan.ac.kr/theme/image.php/coursemosv2/assign/1538974486/icon&quot; /&gt;&lt;a href=&quot;http://plms.pusan.ac.kr/calendar/view.php?view=day&amp;amp;time=1539183600#event_46130&quot;&gt;과제1.&lt;/a&gt;&lt;/div&gt;" class="day hasevent calendar_event_course duration  duration_course calendar_event_course"><a href="http://plms.pusan.ac.kr/calendar/view.php?view=day&amp;time=1539183600#event_46130">11</a></td><td class="day duration  duration_course">12</td><td class="weekend day">13</td></tr><tr><td class="weekend day">14</td><td data-core_calendar-title="2018년 10월 15일(월요일) 일정" data-core_calendar-popupcontent="&lt;div&gt;&lt;img class=&quot;smallicon&quot; alt=&quot;quiz&quot; title=&quot;quiz&quot; src=&quot;http://plms.pusan.ac.kr/theme/image.php/coursemosv2/quiz/1538974486/icon&quot; /&gt;&lt;a href=&quot;http://plms.pusan.ac.kr/calendar/view.php?view=day&amp;amp;time=1539529200#event_45459&quot;&gt;[5-2A:7]&lt;/a&gt;&lt;/div&gt;&lt;div&gt;&lt;img class=&quot;smallicon&quot; alt=&quot;quiz&quot; title=&quot;quiz&quot; src=&quot;http://plms.pusan.ac.kr/theme/image.php/coursemosv2/quiz/1538974486/icon&quot; /&gt;&lt;a href=&quot;http://plms.pusan.ac.kr/calendar/view.php?view=day&amp;amp;time=1539529200#event_45495&quot;&gt;[5-2B:6]&lt;/a&gt;&lt;/div&gt;&lt;div&gt;&lt;img class=&quot;smallicon&quot; alt=&quot;assign&quot; title=&quot;assign&quot; src=&quot;http://plms.pusan.ac.kr/theme/image.php/coursemosv2/assign/1538974486/icon&quot; /&gt;&lt;a href=&quot;http://plms.pusan.ac.kr/calendar/view.php?view=day&amp;amp;time=1539529200#event_46357&quot;&gt;1장 연습문제 제출&lt;/a&gt;&lt;/div&gt;" class="day hasevent calendar_event_course calendar_event_course"><a href="http://plms.pusan.ac.kr/calendar/view.php?view=day&amp;time=1539529200#event_46357">15</a></td><td class="day duration  duration_course">16</td><td data-core_calendar-title="2018년 10월 17일(수요일) 일정" data-core_calendar-popupcontent="&lt;div&gt;&lt;img class=&quot;smallicon&quot; alt=&quot;quiz&quot; title=&quot;quiz&quot; src=&quot;http://plms.pusan.ac.kr/theme/image.php/coursemosv2/quiz/1538974486/icon&quot; /&gt;&lt;a href=&quot;http://plms.pusan.ac.kr/calendar/view.php?view=day&amp;amp;time=1539702000#event_45500&quot;&gt;[5-3A:4] (시작 일시)&lt;/a&gt;&lt;/div&gt;&lt;div&gt;&lt;img class=&quot;smallicon&quot; alt=&quot;quiz&quot; title=&quot;quiz&quot; src=&quot;http://plms.pusan.ac.kr/theme/image.php/coursemosv2/quiz/1538974486/icon&quot; /&gt;&lt;a href=&quot;http://plms.pusan.ac.kr/calendar/view.php?view=day&amp;amp;time=1539702000#event_45501&quot;&gt;[5-3B:9] (시작 일시)&lt;/a&gt;&lt;/div&gt;" class="day hasevent calendar_event_course duration  duration_course calendar_event_course"><a href="http://plms.pusan.ac.kr/calendar/view.php?view=day&amp;time=1539702000#event_45501">17</a></td><td class="day">18</td><td class="day">19</td><td class="weekend day">20</td></tr><tr><td class="weekend day">21</td><td data-core_calendar-title="2018년 10월 22일(월요일) 일정" data-core_calendar-popupcontent="&lt;div&gt;&lt;img class=&quot;smallicon&quot; alt=&quot;quiz&quot; title=&quot;quiz&quot; src=&quot;http://plms.pusan.ac.kr/theme/image.php/coursemosv2/quiz/1538974486/icon&quot; /&gt;&lt;a href=&quot;http://plms.pusan.ac.kr/calendar/view.php?view=day&amp;amp;time=1540134000#event_45503&quot;&gt;[6A:4]&lt;/a&gt;&lt;/div&gt;&lt;div&gt;&lt;img class=&quot;smallicon&quot; alt=&quot;quiz&quot; title=&quot;quiz&quot; src=&quot;http://plms.pusan.ac.kr/theme/image.php/coursemosv2/quiz/1538974486/icon&quot; /&gt;&lt;a href=&quot;http://plms.pusan.ac.kr/calendar/view.php?view=day&amp;amp;time=1540134000#event_45504&quot;&gt;[6B:8]&lt;/a&gt;&lt;/div&gt;&lt;div&gt;&lt;img class=&quot;smallicon&quot; alt=&quot;assign&quot; title=&quot;assign&quot; src=&quot;http://plms.pusan.ac.kr/theme/image.php/coursemosv2/assign/1538974486/icon&quot; /&gt;&lt;a href=&quot;http://plms.pusan.ac.kr/calendar/view.php?view=day&amp;amp;time=1540134000#event_46358&quot;&gt;2장 연습문제 제출&lt;/a&gt;&lt;/div&gt;" class="day hasevent calendar_event_course calendar_event_course"><a href="http://plms.pusan.ac.kr/calendar/view.php?view=day&amp;time=1540134000#event_46358">22</a></td><td data-core_calendar-title="2018년 10월 23일(화요일) 일정" data-core_calendar-popupcontent="&lt;div&gt;&lt;img class=&quot;smallicon&quot; alt=&quot;quiz&quot; title=&quot;quiz&quot; src=&quot;http://plms.pusan.ac.kr/theme/image.php/coursemosv2/quiz/1538974486/icon&quot; /&gt;&lt;a href=&quot;http://plms.pusan.ac.kr/calendar/view.php?view=day&amp;amp;time=1540220400#event_46813&quot;&gt;[5-3A:4] (종료 일시)&lt;/a&gt;&lt;/div&gt;" class="day hasevent calendar_event_course duration  duration_course calendar_event_course"><a href="http://plms.pusan.ac.kr/calendar/view.php?view=day&amp;time=1540220400#event_46813">23</a></td><td data-core_calendar-title="2018년 10월 24일(수요일) 일정" data-core_calendar-popupcontent="&lt;div&gt;&lt;img class=&quot;smallicon&quot; alt=&quot;quiz&quot; title=&quot;quiz&quot; src=&quot;http://plms.pusan.ac.kr/theme/image.php/coursemosv2/quiz/1538974486/icon&quot; /&gt;&lt;a href=&quot;http://plms.pusan.ac.kr/calendar/view.php?view=day&amp;amp;time=1540306800#event_46814&quot;&gt;[5-3B:9] (종료 일시)&lt;/a&gt;&lt;/div&gt;" class="day hasevent calendar_event_course duration  duration_course calendar_event_course"><a href="http://plms.pusan.ac.kr/calendar/view.php?view=day&amp;time=1540306800#event_46814">24</a></td><td class="day">25</td><td class="day">26</td><td class="weekend day">27</td></tr><tr><td class="weekend day">28</td><td class="day">29</td><td data-core_calendar-title="오늘 2018년 10월 30일(화요일) 일정" data-core_calendar-popupcontent="&lt;div&gt;&lt;img class=&quot;smallicon&quot; alt=&quot;quiz&quot; title=&quot;quiz&quot; src=&quot;http://plms.pusan.ac.kr/theme/image.php/coursemosv2/quiz/1538974486/icon&quot; /&gt;&lt;a href=&quot;http://plms.pusan.ac.kr/calendar/view.php?view=day&amp;amp;time=1540825200#event_47365&quot;&gt;[Midterm-A:90]&lt;/a&gt;&lt;/div&gt;&lt;div&gt;&lt;img class=&quot;smallicon&quot; alt=&quot;quiz&quot; title=&quot;quiz&quot; src=&quot;http://plms.pusan.ac.kr/theme/image.php/coursemosv2/quiz/1538974486/icon&quot; /&gt;&lt;a href=&quot;http://plms.pusan.ac.kr/calendar/view.php?view=day&amp;amp;time=1540825200#event_47366&quot;&gt;[Midterm-B:60]&lt;/a&gt;&lt;/div&gt;" class="day hasevent calendar_event_course calendar_event_course today"><span class="accesshide " >오늘 2018년 10월 30일(화요일) </span><a href="http://plms.pusan.ac.kr/calendar/view.php?view=day&amp;time=1540825200#event_47366">30</a></td><td data-core_calendar-title="2018년 10월 31일(수요일) 일정" data-core_calendar-popupcontent="&lt;div&gt;&lt;img class=&quot;smallicon&quot; alt=&quot;quiz&quot; title=&quot;quiz&quot; src=&quot;http://plms.pusan.ac.kr/theme/image.php/coursemosv2/quiz/1538974486/icon&quot; /&gt;&lt;a href=&quot;http://plms.pusan.ac.kr/calendar/view.php?view=day&amp;amp;time=1540911600#event_45509&quot;&gt;[7A:6]&lt;/a&gt;&lt;/div&gt;&lt;div&gt;&lt;img class=&quot;smallicon&quot; alt=&quot;quiz&quot; title=&quot;quiz&quot; src=&quot;http://plms.pusan.ac.kr/theme/image.php/coursemosv2/quiz/1538974486/icon&quot; /&gt;&lt;a href=&quot;http://plms.pusan.ac.kr/calendar/view.php?view=day&amp;amp;time=1540911600#event_45510&quot;&gt;[7B:6]&lt;/a&gt;&lt;/div&gt;" class="day hasevent calendar_event_course calendar_event_course"><a href="http://plms.pusan.ac.kr/calendar/view.php?view=day&amp;time=1540911600#event_45510">31</a></td><td class="dayblank">&nbsp;</td><td class="dayblank">&nbsp;</td><td class="dayblank">&nbsp;</td></tr></table></div></div><span id="sb-2" class="skip-block-to"></span></aside>				</div>
+								<div id="page-content">
+					<div id="page-content-wrap">
+												<div id="region-main">
+							<div role="main"><span id="maincontent"></span><div class="progress_courses">
+	<div class="course_semester">
+		<div class="my-course-layout-schedule hidden">시간표</div>
+		<div class="dropdown dropdown-ajax my-course-layout-default ">
+			<button id="mycourse-type" type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="text">강좌 전체보기</span> <span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu dropdown-mycourse-type" role="menu" aria-labelledby="mycourse-type">
+				<li><a href="#" data-type="all">강좌 전체보기</a></li>
+				<li><a href="#" data-type="re">교과 강좌</a></li> <!-- 교과(정규) -->
+				<li><a href="#" data-type="ir">비정규 강좌</a></li>	<!-- 비정규 -->
+				<li><a href="http://plms.pusan.ac.kr/local/ubion/user/" data-type="ps">과거 강좌</a></li> <!-- 과거강좌 -->							
+		  	</ul>
+		</div>
+		<div class="course_list_btn_group">
+			
+			
+			<!-- <button type="button" class="nobtn btn-layout btn-layout-simple " data-layout="0"></button>
+			<button type="button" class="nobtn btn-layout btn-layout-calendar " data-layout="1"></button>-->
+			
+						
+		</div>
+	</div>
+	<div class="course_lists">
+		<ul class="my-course-lists coursemos-layout-0"><li class="course_label_re"><div class="course_box"><a href="http://plms.pusan.ac.kr/course/view.php?id=67145" class="course_link"><div class="course-image"><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/core/1538974486/u/f1" alt="" class="courseimage" /></div><div class="course-name"><div class="course-label"><div class="label label-course">교과</div><div class="label label-course label-under">학부</div></div><div class="course-title"><h3>전기회로 (060) <span style="color:#999;">(2학기)</span></h3><p class="prof">이승준</p></div></div></a></div></li><li class="course_label_re"><div class="course_box"><a href="http://plms.pusan.ac.kr/course/view.php?id=67151" class="course_link"><div class="course-image"><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/core/1538974486/u/f1" alt="" class="courseimage" /></div><div class="course-name"><div class="course-label"><div class="label label-course">교과</div><div class="label label-course label-under">학부</div></div><div class="course-title"><h3>일반물리학(II) (027) <span style="color:#999;">(2학기)</span></h3><p class="prof">백광윤</p></div></div></a></div></li><li class="course_label_re"><div class="course_box"><a href="./CProgramming.html" class="course_link"><div class="course-image"><img src="http://plms.pusan.ac.kr/pluginfile.php/14887/user/icon/coursemosv2/f1?rev=2392225" alt="" class="courseimage" /></div><div class="course-name"><div class="course-label"><div class="label label-course">교과</div><div class="label label-course label-under">학부</div></div><div class="course-title"><h3>C프로그래밍 (002) <span style="color:#999;">(2학기)</span></h3><p class="prof">김종덕</p></div></div></a></div></li><li class="course_label_re"><div class="course_box"><a href="http://plms.pusan.ac.kr/course/view.php?id=67167" class="course_link"><div class="course-image"><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/core/1538974486/u/f1" alt="" class="courseimage" /></div><div class="course-name"><div class="course-label"><div class="label label-course">교과</div><div class="label label-course label-under">학부</div></div><div class="course-title"><h3>일반물리학실험 (066) <span style="color:#999;">(2학기)</span></h3><p class="prof">계범석</p></div></div></a></div></li><li class="course_label_re"><div class="course_box"><a href="http://plms.pusan.ac.kr/course/view.php?id=67177" class="course_link"><div class="course-image"><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/core/1538974486/u/f1" alt="" class="courseimage" /></div><div class="course-name"><div class="course-label"><div class="label label-course">교과</div><div class="label label-course label-under">학부</div></div><div class="course-title"><h3>공학수학(I) (060) <span style="color:#999;">(2학기)</span></h3><p class="prof">이진기</p></div></div></a></div></li><li class="course_label_re"><div class="course_box"><a href="http://plms.pusan.ac.kr/course/view.php?id=71177" class="course_link"><div class="course-image"><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/core/1538974486/u/f1" alt="" class="courseimage" /></div><div class="course-name"><div class="course-label"><div class="label label-course">교과</div><div class="label label-course label-under">학부</div></div><div class="course-title"><h3>고전읽기와토론 (057) <span style="color:#999;">(2학기)</span></h3><p class="prof">차윤정</p></div></div></a></div></li><li class="course_label_re"><div class="course_box"><a href="http://plms.pusan.ac.kr/course/view.php?id=71208" class="course_link"><div class="course-image"><img src="http://plms.pusan.ac.kr/pluginfile.php/14887/user/icon/coursemosv2/f1?rev=2392225" alt="" class="courseimage" /></div><div class="course-name"><div class="course-label"><div class="label label-course">교과</div><div class="label label-course label-under">학부</div></div><div class="course-title"><h3>기초컴퓨터프로그래밍 (003) <span style="color:#999;">(2학기)</span></h3><p class="prof">최윤호 / 김종덕</p></div></div></a></div></li></ul>	</div>
+</div>
+<div class="site_notices">
+	<div class="more"><button type="button" class="btn btn-default btn-notice-more">더보기</button></div>
+	<ul class="nav nav-tabs" role="tablist">
+		<li role="presentation" class="active"><a href="#site-notice" aria-controls="site-notice" role="tab" data-toggle="tab">공지사항</a></li>
+		<li role="presentation" class="tab-bar"><a href="#course-notice" aria-controls="course-notice" role="tab" data-toggle="tab">진행 강좌 공지</a></li>
+	</ul>
+
+	<!-- Tab panes -->
+	<div class="tab-content">
+		<div role="tabpanel" class="tab-pane active" id="site-notice">
+			<ul class="notices"><li><a href="http://plms.pusan.ac.kr/mod/ubboard/article.php?id=1&bwid=769574"><div class="date">2018-10-11 17:40</div><h4 class="notice">외부명사 초청특강(밀양캠퍼스)</h4></a></li><li><a href="http://plms.pusan.ac.kr/mod/ubboard/article.php?id=1&bwid=763293"><div class="date">2018-10-02 16:31</div><h4 class="notice">내 삶의 기획자 되기</h4></a></li><li><a href="http://plms.pusan.ac.kr/mod/ubboard/article.php?id=1&bwid=760594"><div class="date">2018-09-27 18:19</div><h4 class="notice">2018 다시 듣고 싶은 수업 에세이 공모전</h4></a></li><li><a href="http://plms.pusan.ac.kr/mod/ubboard/article.php?id=1&bwid=749246"><div class="date">2018-09-07 10:31</div><h4 class="">PLMS 사용안내워크숍</h4></a></li><li><a href="http://plms.pusan.ac.kr/mod/ubboard/article.php?id=1&bwid=746848"><div class="date">2018-08-29 14:03</div><h4 class="notice">2018-2 효원튜터링_튜터 추가모집</h4></a></li></ul>		</div>
+		<div role="tabpanel" class="tab-pane" id="course-notice">
+			<ul class="notices">
+				<li class="noarticle">
+					데이터 가져오는중입니다.				</li>
+			</ul>
+		</div>
+	</div>
+</div><br /></div>						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+				<div id="page-footer">
+			<ul class="footer-menus pull-left">
+		<li><a href="http://pusan.ac.kr/uPNU_homepage/kr/sub/sub.asp?menu_no=10019903" target="_blank" class="privacy_policy">개인정보처리방침</a></li>
+</ul>
+<!-- 
+<div class="helpdesk">
+	<a href="#" class="nobtn">도움말</a>
+</div>
+-->
+<div class="address">
+	(46241) 부산광역시 금정구 부산대학로63번길 2 (장전동) 부산대학교 <span class="tell">Tel : 051-510-3843</span> <span class="tell">Fax : 051-510-3553</span> <span class="tell"><a href="mailto:plms@pusan.ac.kr">plms@pusan.ac.kr</a></span> <br/>
+	<p class="copyright">
+		COPYRIGHTⒸ Pusan National University	</p>
+</div>
+<div id="back-top">
+	<a href="#top"><span></span></a>
+</div>
+<div id="ajax_loading_submit">&nbsp;</div>
+<div id="ajax_loading_container">
+	<div id="ajax_loading_submit_img">
+		<img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/theme_coursemosv2/1538974486/ajax-loader" alt="loading..." /> Loading...
+	</div>
+	<div id="ajax_loading_message">
+		<p class="save_msg">데이터를 저장하고 있습니다. 잠시만 기다려주십시오.</p>
+		<p class="refresh_msg">장시간 페이지 로딩 중이면 새로고침(F5) 해주시기 바랍니다.</p>
+	</div>
+</div>	
+		</div>
+	</div>
+	
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-38985636-10', 'pusan.ac.kr');
+  ga('send', 'pageview');
+
+</script><script type="text/javascript">
+//<![CDATA[
+var require = {
+    baseUrl : 'http://plms.pusan.ac.kr/lib/requirejs.php/1538974486/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+
+    paths: {
+        jquery: 'http://plms.pusan.ac.kr/lib/javascript.php/1538974486/lib/jquery/jquery-1.11.2.min',
+        jqueryui: 'http://plms.pusan.ac.kr/lib/javascript.php/1538974486/lib/jquery/ui-1.11.4/jquery-ui.min',
+        jqueryprivate: 'http://plms.pusan.ac.kr/lib/javascript.php/1538974486/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/lib/javascript.php/1538974486/lib/requirejs/require.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+require(['core/first'], function() {
+;
+require(["core/log"], function(amd) { amd.setConfig({"level":"warn"}); });
+});
+//]]>
+</script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/javascript.php/coursemosv2/1538974486/footer"></script>
+<script type="text/javascript">
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"\ucd5c\uc885 \uc218\uc815 \uc77c\uc2dc","name":"\uc81c\ubaa9","error":"\uc624\ub958","info":"\uc815\ubcf4","morehelp":"\ub3c4\uc6c0\uae00 \ub354","loadinghelp":"\ub85c\ub529 \uc911 ...","cancel":"\ucde8\uc18c","yes":"\uc608","confirm":"\ud655\uc778","no":"\uc544\ub2c8\uc624","areyousure":"\uacc4\uc18d\ud558\uc2dc\uaca0\uc2b5\ub2c8\uae4c?","closebuttontitle":"\ub2eb\uae30","unknownerror":"\uc54c \uc218 \uc5c6\ub294 \uc624\ub958"},"repository":{"type":"\uc720\ud615","size":"\ud06c\uae30","invalidjson":"\uc798\ubabb\ub41c JSON \ubb38\uc790\uc5f4","nofilesattached":"\ucca8\ubd80\ubb3c \uc5c6\uc74c","filepicker":"\ud30c\uc77c \uc120\ud0dd\ub3c4\uad6c","logout":"\ub098\uac00\uae30","nofilesavailable":"\uc4f8 \uc218 \uc788\ub294 \ud30c\uc77c\uc774 \uc5c6\uc74c","norepositoriesavailable":"\uc8c4\uc1a1\ud569\ub2c8\ub2e4. \ud604\uc7ac \uc800\uc7a5\uc18c\uc911\uc5d0\uc11c \ud544\uc694\ud55c \ud3ec\ub9f7\uc73c\ub85c \ud30c\uc77c\uc744 \ubcf4\ub0b4\uc8fc\ub294 \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4.","fileexistsdialogheader":"\ud30c\uc77c\uc774 \uc874\uc7ac\ud569\ub2c8\ub2e4.","fileexistsdialog_editor":"\uac19\uc740 \uc774\ub984\uc758 \ud30c\uc77c\uc774 \ud3b8\uc9d1\ud558\uace0 \uc788\ub294 \ubb38\uc7a5\uc5d0 \uc774\ubbf8 \ucca8\ubd80\ub418\uc5c8\uc2b5\ub2c8\ub2e4.","fileexistsdialog_filemanager":"\uac19\uc740 \uc774\ub984\uc758 \ud30c\uc77c\uc774 \uc774\ubbf8 \ucca8\ubd80\ub418\uc5b4 \uc788\uc2b5\ub2c8\ub2e4.","renameto":"\"{$a}\"\ub85c \uc774\ub984 \ubcc0\uacbd","referencesexist":"\uc774\ud30c\uc77c\uc744 \uc18c\uc2a4\ub85c \uc0ac\uc6a9\ud558\ub294 {$a} \ubcc4\uce6d \/ \ubc14\ub85c\uac00\uae30 \ud30c\uc77c\uc774 \uc788\uc2b5\ub2c8\ub2e4.","select":"\uc120\ud0dd"},"local_ubion":{"no_course2":"\ucc38\uc5ec\uc911\uc778 \uac15\uc88c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4."},"theme_coursemosv2":{"period":"{$a}\uad50\uc2dc"},"admin":{"confirmation":"\ud655\uc778"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+YUI().use('node', function(Y) {
+M.util.load_flowplayer();
+setTimeout("fix_column_widths()", 20);
+M.coursemos.index(Y, 1, "ko");
+Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"ko"});
+});
+Y.use("moodle-block_navigation-navigation",function() {M.block_navigation.init_add_tree({"id":"5","instance":"5","candock":false});
+});
+Y.use("moodle-calendar-info",function() {Y.M.core_calendar.info.init();
+});
+M.util.help_popups.setup(Y);
+Y.use("moodle-core-popuphelp",function() {M.core.init_popuphelp();
+});
+M.util.init_block_hider(Y, {"id":"inst3","title":"\ub2ec\ub825","preference":"block3hidden","tooltipVisible":"\ub2ec\ub825 \ube14\ub85d \uc228\uae30\uae30","tooltipHidden":"\ub2ec\ub825 \ube14\ub85d \ubcf4\uc774\uae30"});
+ M.util.js_pending('random5bd804993dce14'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random5bd804993dce14'); });
+
+});
+//]]>
+</script>
+</body>
+</html>
